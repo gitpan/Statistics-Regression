@@ -1,5 +1,8 @@
 Revision history for Perl extension Statistics::Regression
 
+0.50  05 Apr 2007
+    - Added Coefficient Standard Errors.
+
 0.15  10 Jun 2004 <itub@cpan.org>
     - Repackaged as a standard CPAN package.
 
