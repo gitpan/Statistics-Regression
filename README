@@ -21,8 +21,9 @@ and/or from most intermediate college statistics classes.  If you do not have
 this background knowledge, then this package will remain a mystery to you.
 There is no support for this package--please don't expect any.
 
-CHANGES SINCE VERSION 0.50
-    - Added Coefficient Standard Errors.
+CHANGES SINCE VERSION 0.15
+    - Added Coefficient Standard Errors. (0.50)
+    - Added hash input, better new(), cleanups (0.52)
 
 INSTALLATION
 
