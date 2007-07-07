@@ -1,6 +1,6 @@
 package Statistics::Regression;
 
-$VERSION = '0.52';
+$VERSION = '0.53';
 my $DATE = "2007/07/07";
 my $MNAME= "$0::Statistics::Regression";
 
@@ -169,12 +169,7 @@ missing variables (coded as 'NaN' in Regression.pm).
 pod2html -noindex -title "perl weighted least squares regression package" Regression.pm > Regression.html
 
 
-=head1 VERSION
-
-0.50, 2007/04/04
-
-
-=head1 RECENT CHANGES
+=head1 VERSION and RECENT CHANGES
 
 2007/04/04:  Added Coefficient Standard Errors
 
@@ -542,7 +537,7 @@ my $debug=0;
 
 sub standarderrors {
   my $this= shift;
-  my $K= $this->{k};  # convenience
+  our $K= $this->{k};  # convenience
 
   our @u;
   sub ui {
@@ -684,7 +679,7 @@ sub standarderrors {
 ################################
 sub linearcombination_variance {
   my $this= shift;
-  my $K= $this->{k};  # convenience
+  our $K= $this->{k};  # convenience
 
   my @linear= @_;
 
